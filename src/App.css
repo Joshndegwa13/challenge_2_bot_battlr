@@ -1,0 +1,45 @@
+.app {
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
+
+.bot-collection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+
+.bot-card, .army-bot-card {
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background-color: lightblue;
+  width: 200px;
+  
+}
+
+.bot-card img, .army-bot-card img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 4px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: greenyellow;
+}
+
+.your-bot-army {
+  margin-top: 20px;
+}
