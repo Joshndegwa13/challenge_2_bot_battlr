@@ -11,7 +11,7 @@ const App = () => {
   const [army, setArmy] = useState([]);
 // fetching of bot fron the json file 
   useEffect(() => {
-    fetch('http://localhost:3000/bots')
+    fetch('https://bot-battlr-backend-bay.vercel.app/bots')
       .then(response => response.json())
       .then(data => setBots(data));
   }, []);
@@ -27,7 +27,7 @@ const App = () => {
   };
 // discharging a bot from service 
   const handleDischargeBot = (bot) => {
-    fetch(`http://localhost:3000/bots/${bot.id}`, { method: 'DELETE' })
+    fetch(`https://bot-battlr-backend-bay.vercel.app/bots/${bot.id}`, { method: 'DELETE' })
       .then(() => setArmy(army.filter(b => b.id !== bot.id)));
   };
 
